@@ -1,0 +1,84 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+header{
+  background-color: #F55A5A;
+  height: 3.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header-container img{
+  width: 1.5rem;
+}
+
+.header-container h1{
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+main{
+  margin-left: 2.5rem;
+  margin-top: 6rem;
+}
+
+.card-container{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.img-container img{
+  width: 7.5rem;
+  height: 10.5rem;
+}
+
+.gps-coordinates{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.country{
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+.country img{
+  width: .5rem;
+  height: .8rem;
+}
+
+.country h6{
+  font-size: .8rem;
+}
+
+.localisation-spot a{
+  font-size: .8rem ;
+  text-decoration: none;
+  color: rgb(161, 159, 159);
+}
+
+.localisation-spot a:hover{
+  color: purple;
+}
+
+.description-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.other-information{
+  line-height: 2rem;
+}
