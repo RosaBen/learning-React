@@ -11,6 +11,18 @@ export default function MainContent (){
     // const [recipe, setRecipeShown] = React.useState(false)
 
       const [recipe, setRecipe] = React.useState('')
+      const recipeSection = React.useRef(null)
+
+      React.useEffect(()=>{
+                if (recipe !== "" && recipeSection.current !== null) {
+            recipeSection.current.scrollIntoView({behavior:"smooth"})
+            //             const yCoord = recipeSection.current.getBoundingClientRect().top + window.scrollY
+            // window.scroll({
+            //     top: yCoord,
+            //     behavior: "smooth"
+            // })
+        }
+      },[recipe])
 
     async function getRecipe(){
         const recipeMd = await getRecipeFromMistral(ingredients)
@@ -41,6 +53,7 @@ function addIngredient(formData){
             {/* <form onSubmit={handleSubmit} className="add-ingredient-form"> */}
                <form action={addIngredient} className="add-ingredient-form">
                 <input
+                    
                     type="text"
                     placeholder="e.g. oregano"
                     aria-label="Add ingredient"
@@ -50,6 +63,7 @@ function addIngredient(formData){
             </form>
                     {ingredients.length > 0 &&
                 <IngredientsList
+                ref={recipeSection}
                     ingredients={ingredients}
                     // toggleRecipeShown={toggleRecipeShown}
                     getRecipe={getRecipe}
