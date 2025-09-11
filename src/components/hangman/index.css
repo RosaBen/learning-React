@@ -78,3 +78,21 @@ font-size: 1.25rem;
     color: #F9F4DA;
     
 }
+
+.keyboard{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+        max-width: 22rem;
+    justify-content: center;
+    gap: 0.35rem;
+}
+
+.keyboard-letter{
+background-color: #FCBA29;
+    width: 2.5rem;
+    height: 2.5rem;
+border-radius: .25rem;
+border: 1px solid #D7D7D7;
+cursor: pointer;
+}
