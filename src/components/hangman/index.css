@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: #262626;
+    color: #D9D9D9;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #F9F4DA;
+}
+header > p {
+    font-size: 0.875rem;
+    max-width: 350px;
+    color: #8E8E8E;
+}
+
+.game-status{
+    background-color: #10A95B ;
+    color: #F9F4DA;
+    border-radius: 0.25rem;
+    line-height: .5rem;
+    padding: 0.25rem;
+    text-align: center;
+    /* margin-block: 30px; */ /* to add margin top and bottom only*/
+}
+
+.game-status h2{
+font-size: 1.25rem;
+}
+
+.language-chips{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 22rem;
+    gap: .1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.chip{
+    border-radius: .25rem;
+    padding: 0.25rem;
+    height: 1.5rem;
+    margin: 0;
+}
+
+
+.word{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap:.2rem
+}
+
+.letter{
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #323232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #F9F4DA;
+    color: #F9F4DA;
+    
+}
