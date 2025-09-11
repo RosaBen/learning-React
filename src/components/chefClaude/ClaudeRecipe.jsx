@@ -1,12 +1,12 @@
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown from 'react-markdown';
 // pnpm install react-markdown
 // https://www.npmjs.com/package/react-markdown/v/8.0.6#use
-export default function ClaudeRecipe({recipe}) {
-    return (
-           <section className="suggested-recipe-container" aria-live="polite">
-            <h2>Chef Claude Recommends:</h2>
-            <ReactMarkdown>{recipe}</ReactMarkdown>
-            {/* <h2>Chef Claude Recommends:</h2>
+export default function ClaudeRecipe({ recipe }) {
+  return (
+    <section className="suggested-recipe-container" aria-live="polite">
+      <h2>Chef Claude Recommends:</h2>
+      <ReactMarkdown>{recipe}</ReactMarkdown>
+      {/* <h2>Chef Claude Recommends:</h2>
             <article className="suggested-recipe-container" aria-live="polite">
                 <p>Based on the ingredients you have available, I would recommend making a simple a delicious <strong>Beef Bolognese Pasta</strong>. Here is the recipe:</p>
                 <h3>Beef Bolognese Pasta</h3>
@@ -36,6 +36,6 @@ export default function ClaudeRecipe({recipe}) {
                     <li>Serve hot, garnished with additional fresh basil or grated Parmesan cheese if desired.</li>
                 </ol>
             </article> */}
-        </section>
-    )
+    </section>
+  );
 }

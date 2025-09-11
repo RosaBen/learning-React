@@ -1,6 +1,4 @@
 import ReactDOM from 'react-dom/client';
-import App from "./components/memeGenerator/App"
+import App from './components/memeGenerator/App';
 
-ReactDOM
-    .createRoot(document.getElementById('root'))
-    .render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);

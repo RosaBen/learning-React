@@ -1,12 +1,10 @@
-import Header from "./Header"
-import Entry from "./Entry"
-export default function App(){
-
-  return(
+import Header from './Header';
+import Entry from './Entry';
+export default function App() {
+  return (
     <>
-        
-        <Header/>
-    <Entry/>
+      <Header />
+      <Entry />
     </>
-  )
+  );
 }

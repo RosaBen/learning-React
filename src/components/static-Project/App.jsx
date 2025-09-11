@@ -1,11 +1,11 @@
-import MainContent from "./components/MainContent"
-import Navbar from "./components/Navbar"
+import MainContent from './components/MainContent';
+import Navbar from './components/Navbar';
 
 export default function App() {
-    return (
-        <>
-            <Navbar />
-            <MainContent />
-        </>
-    )
+  return (
+    <>
+      <Navbar />
+      <MainContent />
+    </>
+  );
 }
