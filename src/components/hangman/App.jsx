@@ -124,6 +124,11 @@ export default function AssemblyEndgame() {
       New Game
     </button>
   ) : null;
+
+  const gameStatusClass = clsx('game-status', {
+    won: isGameWon,
+    lost: isGameLost,
+  });
   return (
     <main>
       <header>
@@ -133,21 +138,21 @@ export default function AssemblyEndgame() {
           from Assembly!
         </p>
       </header>
-      {/* {isGameOver && (
-        <section
-          className="game-status"
-          style={{ backgroundColor: hasWon ? '#10A95B' : '#EC5D49' }}
-        >
-          <h2>{hasWon ? 'You win!' : 'Game over!'}</h2>
-          <p>{hasWon ? 'Well done! 🎉' : `The word was: ${currentWord}`}</p>
-        </section>
-      )}
-      {!isGameOver && (
-        <section className="game-status" style={{ backgroundColor: '#323232' }}>
-          <h2>Wrong guesses: {wrongGuessCount}/8</h2>
-          <p>Keep guessing!</p>
-        </section>
-      )} */}
+      <section className={gameStatusClass}>
+        {isGameOver ? (
+          isGameWon ? (
+            <>
+              <h2>You win!</h2>
+              <p>Well done! 🎉</p>
+            </>
+          ) : (
+            <>
+              <h2>Game over!</h2>
+              <p>You lose! Better start learning Assembly 😭</p>
+            </>
+          )
+        ) : null}
+      </section>
       <section className="language-chips">{languageElements}</section>
       <section className="word">{letterElements}</section>
       <section className="keyboard">{keyboardElements}</section>
